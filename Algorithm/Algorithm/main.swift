@@ -14,10 +14,12 @@ var inputList = [String](repeating: "yellow", count: 3)
 var colorValue = [Int](repeating: 0, count: 3)
 
 for i in 0...2 {
+    // python input() -> swift readLine() //// readLine() 디폴트는 char
     inputList[i] = String(readLine()!)
 }
 
 for i in 0...2 {
+    // 색깔 별로 배열 값을 다르게 저장
     switch inputList[i]{
     case "black":
         colorValue[i] = 0
